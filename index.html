@@ -10,8 +10,14 @@
     shrink-to-fit=no">
 
   	<link rel="stylesheet" href="style.css">
+
+  	<!-- Стили иконок -->
   	<link rel="stylesheet" href="pe-icon-7-stroke.css">
   	<link rel="stylesheet" href="helper.css">
+
+  	<!-- Адаптивная сетка -->
+
+  	<link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css">
   	
 
 
@@ -19,6 +25,7 @@
 <body>
 	<header>
 		<div class="headerBlock">
+
 			<div class="logo">
 				<a href="index.html"><img src="img/logo.png" alt=""></a>
 			</div>
@@ -57,26 +64,30 @@
 		</div>
 	</header>
 	<main>
-		<div class="mainBlock">
-			<div class="mainHeader">
-				<div class="mainHeaderImg">
-					<img src="img/plant.png" alt="">
+
+		<div class="conteiner">
+			<div class="row mainHeader">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="mainHeaderImg">
+						<img src="img/plant.png" alt="">
+					</div>
 				</div>
-				<div class="mainHeaderText">
-					<h1>
-						We Design and Develop
-					</h1>
-					<p>
-						We are a new design studio based in USA. We have over 
-						20 years of combined experience, and know a thing or two 
-						about designing websites and mobile apps.
-					</p>
-					<button>
-						Contact us
-					</button>
-					
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="mainHeaderText">
+						<h1>
+							We Design and Develop
+						</h1>
+						<p>
+							We are a new design studio based in USA. We have over 
+							20 years of combined experience, and know a thing or two 
+							about designing websites and mobile apps.
+						</p>
+						<button>
+							Contact us
+						</button>
+					</div>
+					<a href="#down" id="downButton"> <i class="pe-7s-angle-down-circle pe-4x "></i></a>
 				</div>
-				<a href="#down" id="downButton"> <i class="pe-7s-angle-down-circle pe-4x "></i></a>
 			</div>
 			<div   id="down"></div>
 			<div class="aboutUs">
@@ -88,79 +99,101 @@
 						Divide have don't man wherein air fourth. Own itself make have night won't make. 
 						A you under Seed appear which good give. Own give air without fowl moveth dry first 
 						heaven fruit, dominion she'd won't very all.
-
 					</p>
 					<img src="img/signature.png" alt="">
-				</div>
-				
+				</div>	
 			</div>
-			<div class="skils">
-				<h2>
-					Professional Skills
-				</h2>
-
-					<div>UI/UX Design 75%</div>
-					<div class='progress1'></div>
-					<div>Web Development 90%</div>
-					<div class='progress2'></div>
-					<div>Marceting 65%</div>
-					<div class='progress3'></div>
-				</ul>
-			</div>
-
-
-			<div class="gridBlock-4 parameterList">	
-				<div class="list">
-					<i class="pe-7s-portfolio pe-4x"></i>
-					<p>548</p>
-					<p>Project completed</p>
+			<div class="row skilsBlock">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="skils">
+						<h2>
+							Professional Skills
+						</h2>
+						<div>UI/UX Design 75%</div>
+						<div class='progress1'></div>
+						<div>Web Development 90%</div>
+						<div class='progress2'></div>
+						<div>Marceting 65%</div>
+						<div class='progress3'></div>
+					</div>
 				</div>
-				<div class="list">
-					<i class="pe-7s-clock pe-4x"></i>
-					<p>1465</p>
-					<p>Working hours</p>
-				</div>
-				<div class="list">
-					<i class="pe-7s-star pe-4x"></i>
-					<p>612</p>
-					<p>Positive feetbacks</p>
-				</div>
-				<div class="list">
-					<i class="pe-7s-like pe-4x"></i>
-					<p>735</p>
-					<p>Happy clients</p>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="skilsPhoto">
+					</div>
 				</div>
 			</div>
-			
-			<div class="gridBlock-4">	
-				<div class="photoBlock">
-					
-					<a href=""><p class="pe-7s-look pe-4x "></p></a>
+			<div class="row parameterList">
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<div class="list">
+						<i class="pe-7s-portfolio pe-4x"></i>
+						<p>548</p>
+						<p>Project completed</p>
+					</div>
 				</div>
-				<div class="photoBlock">
-					<a href=""><p class="pe-7s-look pe-4x "></p></a>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<div class="list">
+						<i class="pe-7s-clock pe-4x"></i>
+						<p>1465</p>
+						<p>Working hours</p>
+					</div>
 				</div>
-				<div class="photoBlock">
-					<a href=""><p class="pe-7s-look pe-4x "></p></a>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<div class="list">
+						<i class="pe-7s-star pe-4x"></i>
+						<p>612</p>
+						<p>Positive feetbacks</p>
+					</div>
 				</div>
-				<div class="photoBlock">
-					<a href=""><p class="pe-7s-look pe-4x "></p></a>
-				</div>
-				<div class="photoBlock">
-					<a href=""><p class="pe-7s-look pe-4x "></p></a>
-				</div>
-				<div class="photoBlock">
-					<a href=""><p class="pe-7s-look pe-4x "></p></a>
-				</div>
-				<div class="photoBlock">
-					<a href=""><p class="pe-7s-look pe-4x "></p></a>
-				</div>
-				<div class="photoBlock">
-					<a href=""><p class="pe-7s-look pe-4x "></p></a>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<div class="list">
+						<i class="pe-7s-like pe-4x"></i>
+						<p>735</p>
+						<p>Happy clients</p>
+					</div>
 				</div>
 			</div>
-			
-			
+			<div class="row photoBlock">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="photoBlock1">
+						<a href=""><p class="pe-7s-look pe-4x "></p></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="photoBlock2">
+						<a href=""><p class="pe-7s-look pe-4x "></p></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="photoBlock3">
+						<a href=""><p class="pe-7s-look pe-4x "></p></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="photoBlock4">
+						<a href=""><p class="pe-7s-look pe-4x "></p></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="photoBlock5">
+						<a href=""><p class="pe-7s-look pe-4x "></p></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="photoBlock6">
+						<a href=""><p class="pe-7s-look pe-4x "></p></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="photoBlock7">
+						<a href=""><p class="pe-7s-look pe-4x "></p></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="photoBlock8">
+						<a href=""><p class="pe-7s-look pe-4x "></p></a>
+					</div>
+				</div>
+			</div>
 			<div class="workProces">
 				<div>
 					<h2>
@@ -170,58 +203,66 @@
 						Was years it seasons was there form he in in them together over that, 
 						third sixth gathered female creeping bearing behold years.
 					</p>
-				
-				
-				 
-				 <iframe width="800" height="400" src="https://www.youtube.com/embed/otCp0CjTX3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-				 	
-				 </iframe>	
-				 </div>	 
+				 	<iframe width="800" height="400" src="https://www.youtube.com/embed/otCp0CjTX3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>	
+				 	</iframe>	
+				</div>	 
 			</div>
-
-			<div class="gridBlock-4 servicesBlock">	
-				<div class="services">
-					<i class="pe-7s-diamond pe-3x"></i>
-					<h3><a href="">UI/UX design</a></h3>
-					<p>Be sety fourth land god darkness make it wherein own</p>
+			<div class="row servicesBlock">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="services">
+						<i class="pe-7s-diamond pe-3x"></i>
+						<h3><a href="">UI/UX design</a></h3>
+						<p>Be sety fourth land god darkness make it wherein own</p>
+					</div>
 				</div>
-				<div class="services">
-					<i class="pe-7s-arc pe-3x"></i>
-					<h3><a href="">WEB Development</a></h3>
-					<p>A she'd them bring void moving third she'd kind fill</p>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="services">
+						<i class="pe-7s-arc pe-3x"></i>
+						<h3><a href="">WEB Development</a></h3>
+						<p>A she'd them bring void moving third she'd kind fill</p>
+					</div>
 				</div>
-				<div class="services">
-					<i  class="pe-7s-phone pe-3x"></i>
-					<h3><a href="">APP/Mobile</a></h3>
-					<p>Dominion man second spirit he, earth they're creeping</p>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="services">
+						<i  class="pe-7s-phone pe-3x"></i>
+						<h3><a href="">APP/Mobile</a></h3>
+						<p>Dominion man second spirit he, earth they're creeping</p>
+					</div>
 				</div>
-				<div class="services">
-					<i  class="pe-7s-joy pe-3x"></i>
-					<h3><a href="">Game design</a></h3>
-					<p>Morning his saying moveth it mltiply appear life be</p>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="services">
+						<i  class="pe-7s-joy pe-3x"></i>
+						<h3><a href="">Game design</a></h3>
+						<p>Morning his saying moveth it mltiply appear life be</p>
+					</div>
 				</div>
-			</div>
-
-			<div class="gridBlock-4 servicesBlock">	
-				<div class="services">
-					<i class="pe-7s-plane pe-3x"></i>
-					<h3><a href="">SEO/Marketing</a></h3>
-					<p>Give won't after land fill creeping meat you, may </p>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="services">
+						<i class="pe-7s-plane pe-3x"></i>
+						<h3><a href="">SEO/Marketing</a></h3>
+						<p>Give won't after land fill creeping meat you, may </p>
+					</div>
 				</div>
-				<div class="services">
-					<i class="pe-7s-star pe-3x"></i>
-					<h3><a href="">Photography</a></h3>
-					<p>Creepeth one seas cattle grass give moving saw give </p>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="services">
+						<i class="pe-7s-star pe-3x"></i>
+						<h3><a href="">Photography</a></h3>
+						<p>Creepeth one seas cattle grass give moving saw give </p>
+					</div>
 				</div>
-				<div class="services">
-					<i class="pe-7s-magic-wand pe-3x"></i>
-					<h3><a href="">Graphic Design</a></h3>
-					<p>Open, great whales air rule for, fourth life whales</p>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="services">
+						<i class="pe-7s-magic-wand pe-3x"></i>
+						<h3><a href="">Graphic Design</a></h3>
+						<p>Open, great whales air rule for, fourth life whales</p>
+					</div>
 				</div>
-				<div class="services">
-					<i class="pe-7s-paint-bucket pe-3x"></i>
-					<h3><a href="">Illustrations</a></h3>
-					<p>Whales likeness hath, man kind for them air two won't </p>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="services">
+						<i class="pe-7s-paint-bucket pe-3x"></i>
+						<h3><a href="">Illustrations</a></h3>
+						<p>Whales likeness hath, man kind for them air two won't </p>
+					</div>
 				</div>
 			</div>
 			<div class="sloganSlider">
@@ -231,70 +272,97 @@
 						to work with them on a sizable first project and am looking 
 						forward to start the next one asap.”
 					</div>
-				</div>
-				
-				
+				</div>	
 			</div>
-			<div class="clients">
-				<img src="img/1.png" alt="">
-
-				<img src="img/2.png" alt="">
-
-				<img src="img/3.png" alt="">
-
-				<img src="img/4.png" alt="">
-
-				<img src="img/5.png" alt="">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="clients">
+						<img src="img/1.png" alt="">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="clients">
+						<img src="img/2.png" alt="">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="clients">
+						<img src="img/3.png" alt="">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="clients">
+						<img src="img/4.png" alt="">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="clients">
+						<img src="img/5.png" alt="">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="clients">
+						<img src="img/6.png" alt="">
+					</div>
+				</div>
 			</div>
 			<div class="form">
-				<h2>Need a Project?</h2>
-				<p>Let us know what you're looking for in an agency. We'll take a look and see 
-				if this could be the start of something beautiful.</p>
-				<form action="">
-					<input type="text">
-					<input type="email">
-					<input type="text">
-					<input type="textaria">
-
-					<button>Send Massage</button>
-				</form>
+				<div>
+					<h2>Need a Project?</h2>
+					<p>Let us know what you're looking for in an agency. We'll take a look and see 
+					if this could be the start of something beautiful.</p>
+					<form action="" class="sendForm">
+						<input type="text" id="name" placeholder="Your name">
+						<input type="email" id="mail" placeholder="Your Email">
+						<input type="text" id="title" placeholder="Your Title">
+						<textarea id="comment" placeholder="Your Comment"></textarea>
+						<div><button id="sendMassage">Send Massage</button></div>
+					</form>	
+				</div>	
 			</div>
 		</div>
 	</main>
+
 	<footer>
-		<div>
-			<h4>Peroll Design, Inc.</h4>
-			<p>© 2017 Piroll. All rights reserved.
-			Designed by robirurk.</p>
-		</div>
-		<div>
-			<p>hello@perolltheme.com</p>
-			<p>+44 987 065 908</p>
-		</div>
-		<div>
-			<div>
-				<ul>
-					<li><a href="">Project</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Carreer</a></li>
-					<li><a href="">News</a></li>
-					<li><a href="">Events</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">Legals</a></li>
-				</ul>
+		<div class="conteiner">
+			<div class="row footer">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<div>
+						<h4>Peroll Design, Inc.</h4>
+						<p>© 2017 Piroll. All rights reserved.</p>
+						<p>Designed by robirurk.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div>
+						<p>hello@alla.com</p>
+						<p>+44 987 065 908</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div>
+						<ul  class="footerNav">
+							<li><a href="">Project</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Services</a></li>
+							<li><a href="">Carreer</a></li>
+							<li><a href="">News</a></li>
+							<li><a href="">Events</a></li>
+							<li><a href="">Contact</a></li>
+							<li><a href="">Legals</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+					<div>
+						<ul class="socialNetworks">
+							<li><a href="">Facebook</a></li>
+							<li><a href="">Twitter</a></li>
+							<li><a href="">Instagram</a></li>
+							<li><a href="">Dribbble</a></li>
+						</ul>
 			</div>
-			<div>
-				<ul>
-					<li><a href="">Facebook</a></li>
-					<li><a href="">Twitter</a></li>
-					<li><a href="">Instagram</a></li>
-					<li><a href="">Dribbble</a></li>
-				</ul>
-			</div>
 		</div>
-
 	</footer>
-
 </body>
 </html>
