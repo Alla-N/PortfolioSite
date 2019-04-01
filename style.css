@@ -70,9 +70,11 @@ i.pe-7s-menu:before {
 /* ------main------------- */
 
 
-.mainHeader{
+div.mainHeader{
 	background-color: #e2ecee;
+	margin: 0;
 }
+
 
 .mainHeaderImg {
 	text-align: center;
@@ -83,7 +85,7 @@ i.pe-7s-menu:before {
 
 .mainHeaderText {
 	text-align: left;
-	padding: 240px 10px;
+	padding: 240px 35px;
 	position: relative;
 	height: 850px;
 }
@@ -133,7 +135,7 @@ i.pe-7s-menu:before {
 }
 
 #down{
-		transition: 3s ease;
+	transition: 3s ease;
 }
 
 
@@ -162,9 +164,17 @@ i.pe-7s-menu:before {
 
 
 
-.skilsBlock{
+div.skilsBlock{
 	background-color: #f9f9f9;
+	margin: 0;
 }
+.skilsBlock div:first-child{
+	padding: 0;
+	padding-top: 20px;
+	padding-left: 35px;
+	margin: 0;
+}
+
 
 .skils{
 	height: 570px;
@@ -183,12 +193,13 @@ i.pe-7s-menu:before {
 	font-weight: bold;
 }
 
-.skilsPhoto{
+div.skilsPhoto{
 	background-image: url(img/01_One_Page.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	height: 570px;
+	padding: 0;
 }
 
 
@@ -199,7 +210,7 @@ i.pe-7s-menu:before {
 [class*="progress"]{
 	border-bottom:3px solid grey;
 	height: 3px;
-	width: 500px;
+	width: 80%;
 	margin: 20px 0 20px 35px;
 	position: relative;
 }
@@ -226,11 +237,17 @@ i.pe-7s-menu:before {
 
 
 
-.parameterList{
+div.parameterList{
 	background-color: #10c9c3;
 	color: white;
 	text-align: left;
 	text-indent: 15px;
+	margin: 0;
+}
+
+.parameterList div{
+	padding: 30px 0;
+	margin: 0;
 }
 
 .list{
@@ -253,8 +270,9 @@ display: block;
 }
 
 
-
-
+div.photoBlock{
+	margin: 0;
+}
 
 div.photoBlock div{
 	padding: 0;
@@ -373,7 +391,7 @@ p.pe-7s-look:before {
 }
 
 .workProces>div{
-	max-width: 800px;
+	max-width: 80%;
 	margin: 100px auto 50px;
 	padding: 10px;
 	text-align: center;
@@ -381,29 +399,38 @@ p.pe-7s-look:before {
 }
 
 .workProces p{
+	max-width: 70%;
+	margin: 40px auto;
 	color: #797876;
-	margin: 40px 0;
 }
 
 
 
 
-.servicesBlock {
+div.servicesBlock {
 	background-color: #f5f5f5;
+	margin: 0;
 }
+
+
 
 .services {
 	color:grey;
 	text-align: center;
 	width: 100%;
 	min-width:250px;
-	margin: 20px auto;
+	margin: 40px auto;
 	font-size: 14px;
 }
 
 .services>h3{
 	margin: 20px;
 	font-size: 16px;
+}
+
+.services>p{
+	max-width: 60%;
+	margin: 0 auto;
 }
 
 .services h3>a{
@@ -418,15 +445,22 @@ p.pe-7s-look:before {
 
 
 .sloganSlider{
-	height: 500px;
 	background-color: #10c9c3;
 }
-.sloganSlider>div{
-	max-width: 600px;
-	height: 160px;
-	vertical-align: middle;
+
+
+.sliderText{
+	padding: 80px 0;
+	width: 80%;
+	margin: 0 auto;
+	color:white;
+	font-size: 28px;
 	text-align: center;
-	margin: 10px auto;
+
+}
+
+div.clientsBlock {
+	margin: 0;
 }
 
 
@@ -510,12 +544,35 @@ p.pe-7s-look:before {
 
 
 /*---------footer-----------------*/
-
 footer{
+	position: relative;
 	background-color: black;
 	color:white;
 
 }
+
+#backToTop{
+	position: absolute;
+	right: 20px;
+	top:20px;
+	opacity: 0.6;
+	transition: .5s;
+	color: white;
+	cursor: pointer;
+
+}
+
+#backToTop:hover{	
+	opacity: 1;
+	transform: scale(1.1);
+
+}
+
+#top{
+		transition: 3s ease;
+}
+
+
 footer > .conteiner{
 	padding: 80px;
 	opacity: 0.8;
