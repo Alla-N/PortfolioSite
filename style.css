@@ -42,7 +42,7 @@ header{
 	clear: both;
 	display: block;
 }
-.headerNavList:after, .subNavList:after{
+.headerNavList:after, .subNavList:after, .headerNav:after{
 	content: '';
 	clear: both;
 	display: block;
@@ -66,7 +66,6 @@ i.pe-7s-menu:before {
 }
 
 
-
 /* ------main------------- */
 
 
@@ -80,6 +79,9 @@ div.mainHeader{
 	text-align: center;
 	display: block;
 	height: 850px;
+}
+.mainHeaderImg>img {
+	max-width: 90%;
 }
 
 
@@ -466,7 +468,14 @@ div.clientsBlock {
 
 .clients{
 	padding: 70px;
+	margin: 0 auto;
 }
+
+
+.clients>img{
+	margin: 0 25%;
+}
+
 
 
 
