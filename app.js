@@ -19,6 +19,13 @@ $('.sloganSlider').slick({
   }, 1500);
 });
 
+  $(document).on('click', '#backToTop', function() {
+  var linkID = $(this).attr('href');
+  $('html, body').animate({ 
+    scrollTop: $(linkID).offset().top 
+  }, 1000);
+});
+
  /*анимация прогресса*/
 
  setTimeout(function () {

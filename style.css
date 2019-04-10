@@ -101,7 +101,7 @@ div.mainHeader{
 	color: #797876;
 }
 
-.mainHeaderText>button{
+.mainHeaderText button{
 	width: 180px;
 	height: 55px;
 	color:white;
@@ -114,7 +114,7 @@ div.mainHeader{
 	transition: .8s;
 }
 
-.mainHeaderText>button:hover{
+.mainHeaderText button:hover{
 	transform: scale(1.1);
 }
 
@@ -401,7 +401,7 @@ p.pe-7s-look:before {
 }
 
 .workProces>div{
-	max-width: 80%;
+	max-width: 100%;
 	margin: 100px auto 50px;
 	padding: 10px;
 	text-align: center;
@@ -413,6 +413,11 @@ p.pe-7s-look:before {
 	margin: 40px auto;
 	color: #797876;
 }
+
+.workProces iframe{
+	width:80%; 
+	height:400px;
+} 
 
 
 
@@ -475,14 +480,11 @@ div.clientsBlock {
 
 
 .clients{
-	padding: 70px;
-	margin: 0 auto;
+	width: 130px;
+	margin: 20px auto;
+	text-align: center;
 }
 
-
-.clients>img{
-	margin: 0 25%;
-}
 
 
 
@@ -677,4 +679,71 @@ i.pe-7s-menu:before {
 
 }
 	
+}
+
+/* ---------стиль для мобильных------------ */
+
+@media (max-width: 426px) {
+
+	.mainHeaderImg{
+		max-height: 450px;
+	}
+
+	.mainHeaderImg img{
+		max-height: 100%;
+	}
+
+	.mainHeaderText {
+		max-height: 450px;
+		padding: 35px;
+	}
+
+	.contactUs{
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#downButton {
+    bottom: 5%;
+	}
+
+	div.skils, div.skilsPhoto{
+		min-height: 300px;
+		height: 300px;
+		text-indent: 10px;
+	}
+
+	[class*='progress']{
+		margin-left: 10px;
+	}
+
+	.workProces{
+		height: 500px;
+	}
+
+	.workProces div{
+		width:100%; 
+		max-width: 100%;
+		margin: 50px auto;
+	} 
+
+	.workProces iframe{
+		width:100%; 
+		height:200px;
+	} 
+
+	#name, #mail{
+		width: 80%;
+	}
+
+	#comment{
+		height: 100px;
+	}
+
+	.sendForm button{
+		margin-top: 0;
+	}
+
+
 }
