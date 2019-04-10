@@ -1,3 +1,5 @@
+/*слайдер*/
+
 $('.sloganSlider').slick({
   	dots:true,
   	autoplay:true,
@@ -6,3 +8,44 @@ $('.sloganSlider').slick({
 	pauseOnDotsHover:true,
   	
   })
+
+/*плавный переход по якорной ссылке*/
+
+
+ $(document).on('click', '#downButton', function() {
+  var linkID = $(this).attr('href');
+  $('html, body').animate({ 
+    scrollTop: $(linkID).offset().top 
+  }, 1500);
+});
+
+ /*анимация прогресса*/
+
+ setTimeout(function () {
+
+ jQuery(function($){
+$(".skils").viewportChecker({
+callbackFunction:function(){
+
+	$("[class*='progress'] > span").each(function() {
+
+        $(this)
+
+                .data("origWidth", $(this).width())
+
+                .width(0)
+
+                .animate({
+
+                        width: $(this).data("origWidth")
+
+                }, 4000);
+
+});	
+}
+});
+});
+
+
+},4000);
+

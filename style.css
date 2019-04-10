@@ -111,12 +111,11 @@ div.mainHeader{
 	border: none;
 	margin-top: 40px;
 	cursor: pointer;
-	transition: .7s border-radius;
+	transition: .8s;
 }
 
 .mainHeaderText>button:hover{
-	font-size:105%;
-	border-radius: 20px;
+	transform: scale(1.1);
 }
 
 #downButton{
@@ -200,7 +199,8 @@ div.skilsPhoto{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 570px;
+	min-height: 570px;
+	height: 100%;
 	padding: 0;
 }
 
@@ -217,7 +217,7 @@ div.skilsPhoto{
 	position: relative;
 }
 
-[class*="progress"]:before{
+[class*="progress"] > span{
 	content: '';
 	border-bottom:3px solid #10c9c3;
 	position: absolute;
@@ -225,15 +225,23 @@ div.skilsPhoto{
 	top:0;
 }
 
-.progress1:before{
+.progress1 > span{
 	width: 75%;
+
 }
-.progress2:before{
+.progress2 > span{
 	width: 90%;
 }
-.progress3:before{
+.progress3 > span{
 	width: 65%;
 }
+
+
+
+
+
+
+
 
 
 
@@ -543,12 +551,11 @@ div.clientsBlock {
 	border: none;
 	margin-top: 30px;
 	cursor: pointer;
-	transition: .7s border-radius;
+	transition: .8s;
 }
 
 #sendMassage:hover{
-	font-size:105%;
-	border-radius: 20px;
+	transform: scale(1.1);
 }
 
 
