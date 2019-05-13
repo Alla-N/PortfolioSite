@@ -28,13 +28,40 @@ $('.sloganSlider').slick({
 
  /*анимация прогресса*/
 
- setTimeout(function () {
+//  setTimeout(function () {
+
+//  jQuery(function($){
+// $(".skils").viewportChecker({
+// callbackFunction:function(){
+
+// 	$("[class*='progress'] > span").each(function() {
+
+//         $(this)
+
+//                 .data("origWidth", $(this).width())
+
+//                 .width(0)
+
+//                 .animate({
+
+//                         width: $(this).data("origWidth")
+
+//                 }, 4000);
+
+// });	
+// }
+// });
+// });
+
+
+// },4000);
+
+
+setInterval(function () {
 
  jQuery(function($){
-$(".skils").viewportChecker({
-callbackFunction:function(){
 
-	$("[class*='progress'] > span").each(function() {
+  $("[class*='progress'] > span").each(function() {
 
         $(this)
 
@@ -46,11 +73,9 @@ callbackFunction:function(){
 
                         width: $(this).data("origWidth")
 
-                }, 4000);
+                }, 3000);
 
-});	
-}
-});
+}); 
 });
 
 
