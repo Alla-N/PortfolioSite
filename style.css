@@ -75,8 +75,7 @@ i.pe-7s-menu:before {
 .mainHeaderImg {
 	background-color: #e2ecee;
 	text-align: center;
-	display: block;
-	height: 85vh;
+	height: 450px;
 }
 .mainHeaderImg>img {
 	max-width: 100%;
@@ -91,7 +90,7 @@ i.pe-7s-menu:before {
 	padding-left: 35px;
 	padding-right: 35px;
 	position: relative;
-	height: 85vh;
+	height: 450px;
 }
 
 .mainHeaderText>h1{
@@ -129,18 +128,15 @@ i.pe-7s-menu:before {
 	opacity: 0.6;
 	transition: .5s;
 	color: #10c9c3;
-
 }
-#downButton:hover{
-	
-	opacity: 1;
 
+#downButton:hover{	
+	opacity: 1;
 }
 
 #down{
 	transition: 3s ease;
 }
-
 
 
 
@@ -636,8 +632,6 @@ i.pe-7s-menu:before {
 
 @media (max-width: 426px) {
 
-
-
 	.mainHeaderImg img{
 		max-height: 100%;
 	}
@@ -685,6 +679,10 @@ i.pe-7s-menu:before {
 
 	.sendForm button{
 		margin-top: 0;
+	}
+
+	#downButton{
+	top: 450px;
 	}
 
 
